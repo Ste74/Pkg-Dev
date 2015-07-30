@@ -1,0 +1,44 @@
+pkgname=wingpanel-indicator-notifications0-bzr
+pkgver=r29
+pkgrel=1
+pkgdesc='The Pantheon Notifications Center'
+arch=('i686' 'x86_64')
+url='https://launchpad.net/wingpanel-indicator-notifications/'
+license=('GPL3')
+groups=('pantheon')
+depends=('granite-bzr' 'wingpanel-rewrite-x110-bzr')
+makedepends=('bzr' 'cmake' 'vala')
+provides=('wingpanel-indicator-notifications-bzr')
+conflicts=('wingpanel-indicator-notifications-bzr')
+install='wingpanel-indicator-notifications.install'
+source=('wingpanel-indicator-notifications::bzr+lp:wingpanel-indicator-notifications')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd wingpanel-indicator-notifications
+
+  echo "r$(bzr revno)"
+}
+
+build() {
+  cd wingpanel-indicator-notifications
+
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build && cd build
+
+  cmake .. \
+    -DCMAKE_BUILD_TYPE='Release' \
+    -DCMAKE_INSTALL_PREFIX='/usr' \
+    -DCMAKE_INSTALL_LIBDIR='/usr/lib'   
+  make
+}
+
+package() {
+  cd wingpanel-indicator-notifications/build
+
+  make DESTDIR="${pkgdir}" install
+}
+
+# vim: ts=2 sw=2 et:

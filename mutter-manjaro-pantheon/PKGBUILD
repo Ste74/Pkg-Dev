@@ -1,0 +1,43 @@
+#
+# Maintainer: Stefano Capitani Ste74 <capitani74@gmail.com>
+# See https://bugzilla.gnome.org/show_bug.cgi?id=646629
+
+pkgname=mutter-manjaro-pantheon
+pkgver=3.14.4
+pkgrel=1
+pkgdesc="A window manager for Manjaro Pantheon"
+arch=(i686 x86_64)
+license=('GPL')
+depends=('clutter' 'dconf' 'gobject-introspection-runtime' 'gsettings-desktop-schemas' 'libcanberra' 'startup-notification' 'zenity' 'libsm' 'gnome-desktop' 'upower' 'libxkbcommon-x11' 'gnome-settings-daemon')
+makedepends=('intltool' 'libxkbcommon-x11' 'gobject-introspection')
+provides=("mutter=$pkgver" "mutter-wayland=$pkgver")
+conflicts=('mutter-wayland''mutter')
+replaces=('mutter-wayland''mutter')
+url="http://www.gnome.org"
+groups=('gnome')
+options=('!emptydirs')
+install=mutter.install
+source=(ftp://ftp.gnome.org/pub/gnome/sources/mutter/3.14/mutter-$pkgver.tar.xz)
+sha256sums=('SKIP')
+
+prepare() {
+  cd "mutter-$pkgver"
+}
+
+build() {
+  cd "mutter-$pkgver"
+  ./configure --prefix=/usr --sysconfdir=/etc \
+      --libexecdir=/usr/lib/mutter \
+      --localstatedir=/var --disable-static \
+      --disable-schemas-compile --enable-compile-warnings=minimum
+
+  #https://bugzilla.gnome.org/show_bug.cgi?id=655517
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+}
+
+package() {
+  cd "mutter-$pkgver"
+  make DESTDIR="$pkgdir" install
+}
