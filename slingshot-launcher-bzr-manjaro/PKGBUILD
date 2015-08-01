@@ -1,29 +1,32 @@
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: flamelab <panosfilip@gmail.com>
 
-pkgname=wingpanel-indicator-launcher0-bzr
-pkgver=r2
-pkgrel=3
+pkgname=slingshot-launcher-bzr-manjaro
+pkgver=r559
+pkgrel=1
 pkgdesc='The Pantheon Application Launcher'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/slingshot'
 license=('GPL3')
 groups=('pantheon')
-depends=('manjaro-gala-bzr' 'slingshot-launcher0-bzr' 'gnome-menus' 'granite-bzr' 'wingpanel-rewrite-x110-bzr'
-         'zeitgeist')
+depends=('gala-bzr-manjaro' 'gnome-menus' 'granite-bzr' 'zeitgeist')
 makedepends=('bzr' 'cmake' 'vala')
-install='wingpanel-indicator-launcher.install'
-source=('wingpanel-indicator-launcher::bzr+lp:~parnold-x/+junk/wingpanel-indicator-launcher')
+provides=('slingshot-launcher')
+conflicts=('slingshot-launcher')
+install='slingshot-launcher.install'
+source=('slingshot-launcher::bzr+lp:slingshot')
 sha256sums=('SKIP')
 
 pkgver() {
-  cd wingpanel-indicator-launcher
+  cd slingshot-launcher
 
   echo "r$(bzr revno)"
 }
 
 build() {
-  cd wingpanel-indicator-launcher
+  cd slingshot-launcher
 
   if [[ -d build ]]; then
     rm -rf build
@@ -33,14 +36,13 @@ build() {
   cmake .. \
     -DCMAKE_BUILD_TYPE='Release' \
     -DCMAKE_INSTALL_PREFIX='/usr' \
-    -DCMAKE_INSTALL_LIBDIR='/usr/lib' \
     -DGSETTINGS_COMPILE='FALSE' \
     -DUSE_UNITY='FALSE'
-  make -j1
+  make
 }
 
 package() {
-  cd wingpanel-indicator-launcher/build
+  cd slingshot-launcher/build
 
   make DESTDIR="${pkgdir}" install
 }

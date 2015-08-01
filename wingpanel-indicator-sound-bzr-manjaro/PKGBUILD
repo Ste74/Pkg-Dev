@@ -1,14 +1,16 @@
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
-pkgname=wingpanel-indicator-sound0-bzr
-pkgver=r21
+pkgname=wingpanel-indicator-sound-bzr-manjaro
+pkgver=r24
 pkgrel=1
 pkgdesc='Sound indicator for Wingpanel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel-indicator-sound'
 license=('GPL3')
 groups=('pantheon-unstable')
-depends=('wingpanel-rewrite-x110-bzr')
+depends=('wingpanel-rewrite-x11-bzr-manjaro' 'granite-bzr')
 makedepends=('bzr' 'cmake' 'vala')
 install='wingpanel-indicator-sound.install'
 provides=('wingpanel-indicator-sound')

@@ -1,7 +1,7 @@
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
 pkgname=cerbere-bzr
-pkgver=r48
+pkgver=r49
 pkgrel=1
 pkgdesc='The Pantheon Watchdog'
 arch=('i686' 'x86_64')

@@ -3,7 +3,7 @@
 
 pkgname=elementary-add-icon-theme-git
 _pkgname=elementary-add
-pkgver=294.635645b
+pkgver=296.bb3029e
 pkgrel=1
 pkgdesc='Additional icons for elementary OS Freya.'
 arch=('any')

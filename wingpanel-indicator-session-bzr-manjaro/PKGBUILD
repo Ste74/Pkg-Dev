@@ -1,15 +1,17 @@
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
-pkgname=wingpanel-indicator-session0-bzr
-pkgver=r20
+pkgname=wingpanel-indicator-session-bzr-manjaro
+pkgver=r30
 pkgrel=1
 pkgdesc='Session indicator for Wingpanel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel-indicator-session'
 license=('GPL3')
 groups=('pantheon-unstable')
-depends=('wingpanel-rewrite-x110-bzr' 'accountsservice')
-makedepends=('bzr' 'cmake' 'vala')
+depends=('wingpanel-rewrite-x11-bzr-manjaro' 'granite-bzr' 'accountsservice')
+makedepends=('bzr' 'cmake' 'vala' )
 provides=('wingpanel-indicator-session')
 conflicts=('wingpanel-indicator-session')
 install='wingpanel.install'

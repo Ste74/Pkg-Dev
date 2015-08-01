@@ -1,8 +1,8 @@
 #
-# Maintainer: Stefano Capitani Ste74 <capitani74@gmail.com>
+# Maintainer: Stefano Capitani Ste74 <capitani74atgmaildotcom>
 # See https://bugzilla.gnome.org/show_bug.cgi?id=646629
 
-pkgname=mutter-manjaro-pantheon
+pkgname=mutter-pantheon-manjaro
 pkgver=3.14.4
 pkgrel=1
 pkgdesc="A window manager for Manjaro Pantheon"

@@ -1,14 +1,16 @@
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
-pkgname=wingpanel-indicator-network0-bzr
-pkgver=r32
+pkgname=wingpanel-indicator-network-bzr-manjaro
+pkgver=r60
 pkgrel=1
 pkgdesc='Network indicator for Wingpanel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel-indicator-network'
 license=('GPL3')
 groups=('pantheon-unstable')
-depends=('wingpanel-rewrite-x110-bzr')
+depends=('wingpanel-rewrite-x11-bzr-manjaro' 'granite-bzr')
 makedepends=('bzr' 'cmake' 'vala' 'libnm-gtk' )
 provides=('wingpanel-indicator-network')
 conflicts=('wingpanel-indicator-network')

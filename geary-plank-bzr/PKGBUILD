@@ -1,7 +1,9 @@
-
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
+# Maintainer: Lucas Nota
 
 pkgname=geary-plank-bzr
-pkgver=r1843
+pkgver=r1849
 pkgrel=1
 pkgdesc='The Pantheon Mailer- this package provides plank integration'
 arch=('i686' 'x86_64')

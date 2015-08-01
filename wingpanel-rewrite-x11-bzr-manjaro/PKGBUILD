@@ -1,16 +1,18 @@
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Ner0 <darkelfdarkelf666@yahoo.co.uk>
 # Contributor: flamelab <panosfilip@gmail.com>
 
-pkgname=wingpanel-rewrite-x110-bzr
-pkgver=r77
+pkgname=wingpanel-rewrite-x11-bzr-manjaro
+pkgver=r86
 pkgrel=1
 pkgdesc='The Pantheon Panel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel'
 license=('GPL3')
 groups=('pantheon-unstable')
-depends=('manjaro-gala-bzr')
+depends=('gala-bzr-manjaro')
 makedepends=('bzr' 'cmake' 'vala')
 provides=('wingpanel' 'wingpanel-bzr')
 conflicts=('wingpanel' 'wingpanel-bzr')
