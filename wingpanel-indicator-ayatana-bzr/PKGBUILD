@@ -1,12 +1,12 @@
 pkgname=wingpanel-indicator-ayatana-bzr
-pkgver=r10
+pkgver=r11
 pkgrel=1
 pkgdesc='Ayatana for wingpanel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel'
 license=('GPL3')
 groups=('pantheon-unstable')
-depends=('manjaro-gala-bzr' 'wingpanel-0.4.x-bzr' )
+depends=('gala-bzr-manjaro' 'wingpanel-rewrite-x11-bzr-manjaro' )
 makedepends=('bzr' 'cmake' 'vala')
 provides=('wingpanel-indicator-ayatana')
 conflicts=('wingpanel-indicator-ayatana')
