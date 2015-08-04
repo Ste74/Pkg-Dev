@@ -1,8 +1,7 @@
 california
 granite-bzr
 cerbere-bzr
-libindicator-gtk2
-libindicator-gtk3
+libindicator
 elementary-icon-theme-bzr
 elementary-add-icon-theme-git
 gtk-engine-unico-bzr
@@ -11,9 +10,13 @@ gala-bzr-manjaro
 dee-bzr
 ido
 libunity
+libgee06
+gnome-menus2
+slingscold
 geary-plank-bzr
 slingshot-launcher-bzr-manjaro
 wingpanel-rewrite-x11-bzr-manjaro
+wingpanel-indicator-ayatana-bzr
 pantheon-session-bzr-manjaro
 wingpanel-indicator-datetime-bzr-manjaro
 wingpanel-indicator-launcher-bzr-manjaro
