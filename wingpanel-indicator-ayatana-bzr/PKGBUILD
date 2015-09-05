@@ -1,6 +1,6 @@
 pkgname=wingpanel-indicator-ayatana-bzr
-pkgver=r11
-pkgrel=1
+pkgver=r12
+pkgrel=2
 pkgdesc='Ayatana for wingpanel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel'

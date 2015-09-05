@@ -3,8 +3,8 @@
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
 pkgname=wingpanel-indicator-session-bzr-manjaro
-pkgver=r30
-pkgrel=1
+pkgver=r31
+pkgrel=2
 pkgdesc='Session indicator for Wingpanel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel-indicator-session'

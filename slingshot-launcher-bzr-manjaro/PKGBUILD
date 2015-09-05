@@ -4,8 +4,8 @@
 # Contributor: flamelab <panosfilip@gmail.com>
 
 pkgname=slingshot-launcher-bzr-manjaro
-pkgver=r559
-pkgrel=1
+pkgver=r567
+pkgrel=2
 pkgdesc='The Pantheon Application Launcher'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/slingshot'

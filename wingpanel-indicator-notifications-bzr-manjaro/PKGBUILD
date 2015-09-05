@@ -3,8 +3,8 @@
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
 pkgname=wingpanel-indicator-notifications-bzr-manjaro
-pkgver=r38
-pkgrel=1
+pkgver=r43
+pkgrel=2
 pkgdesc='The Pantheon Notifications Center'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel-indicator-notifications/'

@@ -5,7 +5,7 @@
 
 pkgname=wingpanel-indicator-launcher-bzr-manjaro
 pkgver=r2
-pkgrel=1
+pkgrel=2
 pkgdesc='The Pantheon Application Launcher'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/slingshot'

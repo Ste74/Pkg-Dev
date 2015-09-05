@@ -5,8 +5,8 @@
 # Contributor: flamelab <panosfilip@gmail.com>
 
 pkgname=wingpanel-rewrite-x11-bzr-manjaro
-pkgver=r86
-pkgrel=1
+pkgver=r90
+pkgrel=2
 pkgdesc='The Pantheon Panel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel'
