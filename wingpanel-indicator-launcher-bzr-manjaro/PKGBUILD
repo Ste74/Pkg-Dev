@@ -5,14 +5,14 @@
 
 pkgname=wingpanel-indicator-launcher-bzr-manjaro
 pkgver=r2
-pkgrel=2
+pkgrel=3
 pkgdesc='The Pantheon Application Launcher'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/slingshot'
 license=('GPL3')
 groups=('pantheon')
-depends=('gala-bzr-manjaro' 'slingshot-launcher-bzr-manjaro' 'gnome-menus' 'granite-bzr' 'wingpanel-rewrite-x11-bzr-manjaro'
-         'zeitgeist')
+depends=('slingshot-launcher-bzr-manjaro' 'wingpanel-rewrite-x11-bzr-manjaro'
+         )
 makedepends=('bzr' 'cmake' 'vala')
 install='wingpanel-indicator-launcher.install'
 source=('wingpanel-indicator-launcher::bzr+lp:~parnold-x/+junk/wingpanel-indicator-launcher')

@@ -3,14 +3,14 @@
 # Maintainer: Lucas Nota
 
 pkgname=geary-plank-bzr
-pkgver=r1849
-pkgrel=1
+pkgver=r1855
+pkgrel=2
 pkgdesc='The Pantheon Mailer- this package provides plank integration'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/geary'
 license=('GPL3')
 groups=('pantheon-integration')
-depends=('gmime' 'gnome-keyring' 'libcanberra' 'libgee' 'libnotify' 'librsvg' 'webkitgtk' 'libunity' 'dee')
+depends=('gmime' 'gnome-keyring' 'libcanberra' 'libgee' 'libnotify' 'librsvg' 'webkitgtk' 'libunity' 'dee' 'icu')
 makedepends=('bzr' 'cmake' 'gnome-doc-utils' 'gobject-introspection' 'intltool' 'vala')
 provides=('geary-plank-bzr')
 conflicts=('geary' 'geary-unity' 'geary-git')
