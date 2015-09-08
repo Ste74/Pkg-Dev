@@ -9,10 +9,12 @@ pkgdesc='A lightweight email client for the Pantheon desktop with plank integrat
 arch=('i686' 'x86_64')
 url='http://www.yorba.org/projects/geary/'
 license=('GPL3')
-depends=('gnome-keyring' 'gmime' 'libcanberra' 'libgee' 'libnotify' 'librsvg''libunity'
+depends=('gnome-keyring' 'gmime' 'libcanberra' 'libgee' 'libnotify' 'librsvg' 'libunity'
          'webkitgtk')
 makedepends=('cmake' 'gnome-doc-utils' 'gobject-introspection' 'intltool'
              'vala')
+provides=('geary-plank-manjaro')
+conflicts=('geary-plank-manjaro' 'geary-plank-bzr' 'geary-plank-bzr-manjaro' 'geary' 'geary-devel' 'geary-git')
 install='geary.install'
 source=("https://download.gnome.org/sources/geary/${pkgver%.?}/geary-${pkgver}.tar.xz")
 sha256sums=('46197a5a1b8b040adcee99082dbfd9fff9ca804e3bf0055a2e90b13214bdbca5')
