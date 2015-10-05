@@ -14,6 +14,7 @@ libgee06
 gnome-menus2
 slingscold
 geary-plank-bzr
+geary-plank-manjaro
 slingshot-launcher-bzr-manjaro
 wingpanel-rewrite-x11-bzr-manjaro
 wingpanel-indicator-ayatana-bzr
@@ -25,3 +26,4 @@ wingpanel-indicator-notifications-bzr-manjaro
 wingpanel-indicator-power-bzr-manjaro
 wingpanel-indicator-session-bzr-manjaro
 wingpanel-indicator-sound-bzr-manjaro
+gnome-settings-daemon-compat

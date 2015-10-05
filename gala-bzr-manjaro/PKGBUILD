@@ -4,7 +4,7 @@
 # Contributor: Ner0 <darkelfdarkelf666@yahoo.co.uk>
 
 pkgname=gala-bzr-manjaro
-pkgver=r475
+pkgver=r483
 pkgrel=2
 pkgdesc='The Pantheon Window Manager for Manjaro'
 arch=('i686' 'x86_64')
@@ -16,14 +16,16 @@ makedepends=('bzr' 'gnome-common' 'granite-bzr' 'intltool' 'vala')
 provides=('gala' 'libgala.so')
 conflicts=('gala')
 install='gala.install'
-source=('bzr+lp:gala')
-sha256sums=('SKIP')
+#source=('bzr+lp:gala')
+#revert to gala r479
+source=('gala-r479.tar.gz')
+sha256sums=('40c7bc0bea2fb6ae71924a64e83fbe1c18fe6787ed3fe58295a5739f2bbbb663')
 
-pkgver() {
-  cd gala
-
-  echo "r$(bzr revno)"
-}
+#pkgver() {
+#  cd gala
+#
+#  echo "r$(bzr revno)"
+#}
 
 build() {
   cd gala

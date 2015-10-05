@@ -1,12 +1,17 @@
+#
+# Maintainer: Ste74 <capitani74atgmaildotcom>
+# Maintainer: Maxime Gauduin <alucryd@archlinux.org>
+
 pkgname=wingpanel-indicator-ayatana-bzr
 pkgver=r12
-pkgrel=2
+pkgrel=3
 pkgdesc='Ayatana for wingpanel'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel'
 license=('GPL3')
 groups=('pantheon-unstable')
-depends=('gala-bzr-manjaro' 'wingpanel-rewrite-x11-bzr-manjaro' )
+depends=('gdk-pixbuf2' 'glib2' 'glibc' 'gtk3' 'libgee' 'libindicator-gtk3'
+         'libwingpanel-2.0.so')
 makedepends=('bzr' 'cmake' 'vala')
 provides=('wingpanel-indicator-ayatana')
 conflicts=('wingpanel-indicator-ayatana')

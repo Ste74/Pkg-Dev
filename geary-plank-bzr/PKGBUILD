@@ -4,7 +4,7 @@
 
 pkgname=geary-plank-bzr
 pkgver=r1855
-pkgrel=2
+pkgrel=1
 pkgdesc='The Pantheon Mailer- this package provides plank integration'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/geary'

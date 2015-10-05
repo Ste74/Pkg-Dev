@@ -3,14 +3,14 @@
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
 pkgname=wingpanel-indicator-notifications-bzr-manjaro
-pkgver=r43
-pkgrel=2
+pkgver=r45
+pkgrel=1
 pkgdesc='The Pantheon Notifications Center'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/wingpanel-indicator-notifications/'
 license=('GPL3')
 groups=('pantheon')
-depends=('granite-bzr' 'wingpanel-rewrite-x11-bzr-manjaro')
+depends=('granite-bzr' 'wingpanel-bzr-manjaro')
 makedepends=('bzr' 'cmake' 'vala')
 provides=('wingpanel-indicator-notifications-bzr')
 conflicts=('wingpanel-indicator-notifications-bzr')

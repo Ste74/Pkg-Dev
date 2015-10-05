@@ -1,33 +1,24 @@
 #
-# Maintainer: Ste74 <capitani74@gmail.com> 
+# Maintainer: Ste74 <capitani74atgmaildotcom>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
-pkgname=pantheon-session-manjaro-bzr
+pkgname=pantheon-session-bzr-manjaro
 pkgver=r63
-pkgrel=1
+pkgrel=2
 pkgdesc='The Pantheon Session Handler'
 arch=('any')
 url='https://code.launchpad.net/~elementary-os/elementaryos/pantheon-xsession-settings'
 license=('GPL3')
 groups=('pantheon-unstable')
-provides=("pantheon-session-bzr=$pkgver")
-conflict=('pantheon-session-bzr')
-replaces=('pantheon-session-bzr')
-depends=('cerbere-bzr' 'manjaro-gala-bzr' 'gconf' 'gnome-keyring' 'gnome-session'
+depends=('cerbere-bzr' 'gala-bzr-manjaro' 'gconf' 'gnome-keyring' 'gnome-session'
          'gnome-settings-daemon' 'gnome-user-share' 'polkit-gnome'
-         'slingshot-launcher-bzr' 'wingpanel-0.4.x-bzr' 'xdg-user-dirs-gtk')
+         'slingshot-launcher-bzr-manjaro' 'wingpanel-bzr-manjaro' 'xdg-user-dirs-gtk')
 makedepends=('bzr')
 optdepends=('pantheon-default-settings-bzr')
-source=('pantheon-session::bzr+lp:~elementary-os/elementaryos/pantheon-xsession-settings'
+source=('pantheon-session.zip'
         'pantheon-session.sh')
-sha256sums=('SKIP'
+sha256sums=('917a1b661199d45169c4fa1352bae1e3194becea4e8bd239e4071b09621d2616'
             '1e0c8e9403e52614d43ecb920e507ee1e96b1439bb20949ff814741e5e5e2284')
-
-pkgver() {
-  cd pantheon-session
-
-  echo "r$(bzr revno)"
-}
 
 prepare() {
   cd pantheon-session
